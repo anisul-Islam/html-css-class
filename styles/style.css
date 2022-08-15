@@ -1,0 +1,123 @@
+/* reset code starts */
+
+* {
+}
+/* reset code ends */
+
+/* common style starts */
+a {
+  color: white;
+}
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: orange;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.title {
+  color: white;
+  background-color: green;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* common style  ends */
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  margin: 0 auto;
+}
+
+/* nav starts here  */
+nav {
+  background-color: #293462;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  min-height: 10vh;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+.right-nav {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+/* nav ends here  */
+/* header starts here  */
+header {
+  min-height: 40vh;
+}
+.container {
+  display: flex;
+  padding: 2rem;
+}
+.left-div {
+  background-color: #1cd6ce;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.right-div {
+  background-color: rebeccapurple;
+  flex: 1;
+}
+/* header ends here  */
+/* main starts here  */
+main {
+  background-color: #1cd6ce;
+  min-height: 40vh;
+}
+/* main ends here  */
+/* footer starts here  */
+footer {
+  background-color: #d61c4e;
+  color: white;
+  min-height: 10vh;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+/* footer ends here  */
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    background-color: #002fec;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    background-color: red;
+  }
+  .right-div {
+    display: none;
+  }
+}
