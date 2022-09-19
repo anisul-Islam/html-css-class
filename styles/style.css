@@ -1,9 +1,19 @@
 /* reset code starts */
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
 /* reset code ends */
 
+/* I have changed instead of orange color and Background Color. */
+:root {
+  --replace-orange: tomato;
+  --banner-color: #99fffa;
+}
 /* common style starts */
 a {
   color: white;
@@ -13,7 +23,7 @@ a {
   border-radius: 0.5rem;
   padding: 1rem;
   margin: 0.5rem;
-  background-color: orange;
+  background-color: var(--replace-orange);
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -54,10 +64,12 @@ nav a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
+  transition: 1s all;
 }
 a:hover {
   text-decoration: underline;
-  color: orange;
+  transform: scale(1.1);
+  color: var(--replace-orange);
 }
 
 .right-nav {
@@ -75,7 +87,7 @@ header {
   padding: 2rem;
 }
 .left-div {
-  background-color: #1cd6ce;
+  background-color: var(--banner-color);
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -90,18 +102,34 @@ header {
 /* header ends here  */
 /* main starts here  */
 main {
-  background-color: #1cd6ce;
   min-height: 40vh;
+  background-color: var(--banner-color);
+}
+
+main section .content-box {
+  margin: 0 2rem;
+  padding: 2rem 0;
 }
 /* main ends here  */
 /* footer starts here  */
 footer {
-  background-color: #d61c4e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #293462;
   color: white;
   min-height: 10vh;
 }
 
+.footer-content {
+  margin-left: 2rem;
+}
+
+.icons {
+  margin-right: 2rem;
+}
 .icon {
+  padding: 1rem;
   font-size: 1.5rem;
 }
 /* footer ends here  */
